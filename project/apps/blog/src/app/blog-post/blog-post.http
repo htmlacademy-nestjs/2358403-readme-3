@@ -1,0 +1,70 @@
+# Create a new video post
+POST http://localhost:3333/api/blog-post/create HTTP/1.1
+Content-Type: application/json
+
+{
+  "type": "video",
+  "status": "draft",
+  "tags": ["tag1", "tag2"],
+  "title": "video1",
+  "link": "http://bla-bla"
+}
+
+###
+
+# Create a new text post
+POST http://localhost:3333/api/blog-post/create HTTP/1.1
+Content-Type: application/json
+
+{
+  "type": "text",
+  "status": "draft",
+  "tags": ["tag3", "tag4"],
+  "title": "text1",
+  "announcement": "announcement1",
+  "text": "Lorem input ..."
+}
+
+###
+
+# Create a new quote post
+POST http://localhost:3333/api/blog-post/create HTTP/1.1
+Content-Type: application/json
+
+{
+  "type": "quote",
+  "status": "draft",
+  "tags": ["tag3", "tag4"],
+  "quote": "Голодный волк уже не тигр.",
+  "author": "Сосед"
+}
+
+###
+
+# Create a new photo post
+POST http://localhost:3333/api/blog-post/create HTTP/1.1
+Content-Type: application/json
+
+{
+  "type": "photo",
+  "status": "draft",
+  "tags": ["tag3", "tag4"],
+  "photo": "https://bla-bla.bla/photo.jpg"
+}
+
+###
+
+# Create a new link post
+POST http://localhost:3333/api/blog-post/create HTTP/1.1
+Content-Type: application/json
+
+{
+  "type": "link",
+  "status": "draft",
+  "tags": ["tag3", "tag4"],
+  "link": "http://bla-bla.bla/link-to-link",
+  "description": "Какое-то описание"
+}
+
+###
+
